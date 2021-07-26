@@ -1,20 +1,33 @@
 import React from 'react';
 import HornedBeasts from './HornedBeasts';
 
+import UniWhalImage from './assets/Images/UniWhal.jpg'
+import UniLegoImage from './assets/Images/UniLego.jpg'
+import CeraImage from './assets/Images/Cera.png'
+import BasicallyImage from './assets/Images/Basically a unicorn.jpg'
+import RhinoImage from './assets/Images/Rhino Family.jpg'
+import UnicornHeadImage from './assets/Images/Unicorn Head.jpg'
+
 class Main extends React.Component {
+  
+  
   render() {
-    return (
-      <>
-        <HornedBeasts name={'Angel'}/>
-        <img src="https://thumbs.dreamstime.com/z/cute-unicorn-angel-vector-pony-child-cartoon-kawaii-animal-horse-horn-character-girly-doodles-fairytales-magic-illustration-173495869.jpg" width="300 px"></img>
-        <HornedBeasts description={'Cute Unicorn angel vector pony child cartoon, Kawaii animal horse horn character, Girly doodles Fairytales magic'}/>
+    return ( 
+    <>
+    
+      <HornedBeasts name={'UniWhal'} imageUrl={UniWhalImage}description={'A unicorn and a narwhal nuzzling their horns'}/>
+      <HornedBeasts name={'UniLego'} imageUrl={UniLegoImage}description={'Lego figurine dressed in a unicorn outfit'}/>
+      <HornedBeasts name={'Cera'} imageUrl={CeraImage}description={'Three horns but still, horns. And who doesnt like The Land Before Time?'}/>
+      <HornedBeasts name1={'Basically'} imageUrl1={BasicallyImage}description={'A narwhal is basically a unicorn after all, right?'}/>
+      <HornedBeasts name1={'Rhino'} imageUrl1={RhinoImage}description={'Mascots have to get their costumes somewhere'}/>
+      <HornedBeasts name1={'UnicornHead'} imageUrl1={UnicornHeadImage }description={'Someone wearing a creepy unicorn head mask'}/> 
        
-        <HornedBeasts name={'Jack'}/>
-        <img src="https://thumbs.dreamstime.com/b/vector-illustration-cute-rhinoceros-cartoon-hand-drawn-flat-style-funny-animal-big-horn-animals-safari-jungle-191589149.jpg" width="300 px"></img>
-        <HornedBeasts description={'Vector illustration of a cute rhinoceros in cartoon hand drawn flat style. A funny animal with a big horn'}/>
-      </>
-    );
+
+    </>
+    )
+     
   }
-}
+  
+};
 
 export default Main;
