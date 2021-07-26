@@ -14,13 +14,18 @@ class Main extends React.Component {
   render() {
     return ( 
     <>
-    
-      <HornedBeasts name={'UniWhal'} imageUrl={UniWhalImage}description={'A unicorn and a narwhal nuzzling their horns'}/>
+       <div className='img1'>
+       <HornedBeasts name={'UniWhal'} imageUrl={UniWhalImage}description={'A unicorn and a narwhal nuzzling their horns'}/>
+       </div>
+
+      <div className='.img2'> 
       <HornedBeasts name={'UniLego'} imageUrl={UniLegoImage}description={'Lego figurine dressed in a unicorn outfit'}/>
+      </div>
+     
       <HornedBeasts name={'Cera'} imageUrl={CeraImage}description={'Three horns but still, horns. And who doesnt like The Land Before Time?'}/>
-      <HornedBeasts name1={'Basically'} imageUrl1={BasicallyImage}description={'A narwhal is basically a unicorn after all, right?'}/>
-      <HornedBeasts name1={'Rhino'} imageUrl1={RhinoImage}description={'Mascots have to get their costumes somewhere'}/>
-      <HornedBeasts name1={'UnicornHead'} imageUrl1={UnicornHeadImage }description={'Someone wearing a creepy unicorn head mask'}/> 
+      <HornedBeasts name={'Basically'} imageUrl={BasicallyImage}description={'A narwhal is basically a unicorn after all, right?'}/>
+      <HornedBeasts name={'Rhino'} imageUrl={RhinoImage}description={'Mascots have to get their costumes somewhere'}/>
+      <HornedBeasts name={'UnicornHead'} imageUrl={UnicornHeadImage }description={'Someone wearing a creepy unicorn head mask'}/> 
        
 
     </>
