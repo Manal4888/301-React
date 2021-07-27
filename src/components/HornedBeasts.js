@@ -1,4 +1,5 @@
 import React from 'react';
+import SelectedBeast from './SelectedBeast';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -18,6 +19,17 @@ class HornedBeasts extends React.Component {
       favorites: this.state.favorites + 1
     })
   }
+
+  Big = () => {
+    return(
+      <SelectedBeast
+                name={this.props.name}
+                imageUrl={this.props.imageUrl} 
+                description={this.props.description}
+      />
+
+        )    }
+
 
   render() {
     return (
@@ -41,7 +53,7 @@ class HornedBeasts extends React.Component {
                   favorites💖 :{this.state.favorites}
                 
                 </Card.Text>
-                <Button variant="primary"> Go somewhere</Button>
+                <Button onClick={this.Big} variant="primary"> Go somewhere</Button>
                 {this.props.description}
               </Card.Body>
             </Card>
