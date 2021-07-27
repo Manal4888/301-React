@@ -12,11 +12,28 @@ class Main extends React.Component {
     super(props);
     this.state = {
       Data: DataJSON
-
+      
     }
   }
 
-  
+  Big = () => {
+   
+      return(
+        <>
+        
+        <SelectedBeast
+        
+          name= {this.state.name}
+          imageUrl={this.state.imageUrl}
+          description= {this.state.description}/>
+        </>
+        )
+     
+      }
+        
+   
+    
+      
 
   render() { 
       return(
@@ -32,6 +49,7 @@ class Main extends React.Component {
                 name={item.title}
                 imageUrl={item.image_url}
                 description={item.description}
+                Big={this.Big}
               />
             )
           })

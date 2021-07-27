@@ -9,11 +9,18 @@ import Modal from 'react-bootstrap/Modal';
 class SelectedBeasts extends React.Component {
 
   
-  render() {
+
+  
+
+  render(){
+
     return (
      
       <>
+   
 
+       
+       
         {
             <div className='Modelbasic'>
                     <Modal.Dialog>
@@ -28,7 +35,7 @@ class SelectedBeasts extends React.Component {
 
                         <Modal.Footer>
                             <Button  variant="secondary">Close</Button>
-                            {/* <Button variant="primary">Save changes</Button> */}
+                           {/* <Button variant="primary">Save changes</Button>  */}
                         </Modal.Footer>
                     </Modal.Dialog>
         
@@ -43,5 +50,6 @@ class SelectedBeasts extends React.Component {
       </>
     )
   }
+
 }
 export default SelectedBeasts;

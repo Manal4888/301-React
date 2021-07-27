@@ -20,27 +20,11 @@ class HornedBeasts extends React.Component {
     })
   }
 
-  Big = () => {
-    return(
-      <SelectedBeast
-                name={this.props.name}
-                imageUrl={this.props.imageUrl} 
-                description={this.props.description}
-      />
-
-        )    }
-
+  
 
   render() {
     return (
-      //  <>
-      //  /* <h2>{this.props.name}</h2>;
-      //  <img 
-      //  src={this.props.imageUrl}
-      //  alt={this.props.name}
-      //  title={this.props.name}/>
-
-
+      
       <>
 
         <div className='cardsclass'>
@@ -53,7 +37,7 @@ class HornedBeasts extends React.Component {
                   favorites💖 :{this.state.favorites}
                 
                 </Card.Text>
-                <Button onClick={this.Big} variant="primary"> Go somewhere</Button>
+                <Button onClick={this.props.Big} variant="primary"> Go somewhere</Button>
                 {this.props.description}
               </Card.Body>
             </Card>
