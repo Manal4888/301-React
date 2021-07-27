@@ -1,4 +1,5 @@
 import React from 'react';
+import SelectedBeast from './SelectedBeast';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -19,16 +20,11 @@ class HornedBeasts extends React.Component {
     })
   }
 
+  
+
   render() {
     return (
-      //  <>
-      //  /* <h2>{this.props.name}</h2>;
-      //  <img 
-      //  src={this.props.imageUrl}
-      //  alt={this.props.name}
-      //  title={this.props.name}/>
-
-
+      
       <>
 
         <div className='cardsclass'>
@@ -41,7 +37,7 @@ class HornedBeasts extends React.Component {
                   favorites💖 :{this.state.favorites}
                 
                 </Card.Text>
-                <Button variant="primary"> Go somewhere</Button>
+                <Button onClick={this.props.Big} variant="primary"> Go somewhere</Button>
                 {this.props.description}
               </Card.Body>
             </Card>
