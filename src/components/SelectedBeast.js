@@ -17,10 +17,7 @@ class SelectedBeasts extends React.Component {
     return (
      
       <>
-   
-
-       
-       
+  
         {
             <div className='Modelbasic'>
                     <Modal.Dialog>
@@ -29,7 +26,7 @@ class SelectedBeasts extends React.Component {
                         </Modal.Header>
 
                         <Modal.Body>
-                            <img src={this.props.imageUrl}/>
+                            <img src={this.props.imageUrl} alt='img'/>
                             <p> {this.props.description}</p>
                         </Modal.Body>
 

@@ -6,12 +6,14 @@ import Button from 'react-bootstrap/Button';
 import Col  from 'react-bootstrap/Col';
 
 
+
 class HornedBeasts extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      favorites: 0
+      favorites: 0,
+      
     }
   }
   incremental = () => {
@@ -20,7 +22,11 @@ class HornedBeasts extends React.Component {
     })
   }
 
-  
+ 
+    
+    
+   
+   
 
   render() {
     return (
@@ -37,7 +43,7 @@ class HornedBeasts extends React.Component {
                   favorites💖 :{this.state.favorites}
                 
                 </Card.Text>
-                <Button onClick={this.props.Big} variant="primary"> Go somewhere</Button>
+                <Button onClick={this.props.Select} variant="primary"> Go somewhere</Button>
                 {this.props.description}
               </Card.Body>
             </Card>
