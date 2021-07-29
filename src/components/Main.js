@@ -23,7 +23,7 @@ class Main extends React.Component {
       
       <Row xs={1} md={3} className="g-4">
           {
-            this.state.data.map(item => {
+            this.props.data.map(item => {
               return (
                 <HornedBeasts
                   name={item.title}
