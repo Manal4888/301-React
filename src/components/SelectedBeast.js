@@ -1,9 +1,6 @@
 import React from 'react';
-import HornedBeasts from './HornedBeasts';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Col  from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 
 class SelectedBeasts extends React.Component {
@@ -19,30 +16,27 @@ class SelectedBeasts extends React.Component {
       <>
   
         {
-            <div className='Modelbasic'>
-                    <Modal.Dialog>
-                        <Modal.Header closeButton>
-                            <Modal.Title>{this.props.name}</Modal.Title>
-                        </Modal.Header>
-
-                        <Modal.Body>
-                            <img src={this.props.imageUrl} alt='img'/>
+            <div >
+                    <Modal show={this.props.show} onHide={this.props.handelClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{this.props.name}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <img src={this.props.imageUrl} alt='img'style={{ width: '18rem' }}/>
                             <p> {this.props.description}</p>
-                        </Modal.Body>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="primary" onClick={this.props.handelClose}>
+                            close
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
 
-                        <Modal.Footer>
-                            <Button  variant="secondary">Close</Button>
-                           {/* <Button variant="primary">Save changes</Button>  */}
-                        </Modal.Footer>
-                    </Modal.Dialog>
-        
-        
       
             </div>
         }
 
-
-
+               
 
       </>
     )
