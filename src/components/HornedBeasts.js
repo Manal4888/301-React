@@ -14,6 +14,7 @@ class HornedBeasts extends React.Component {
     this.state = {
       favorites: 0,
       
+      
     }
   }
   incremental = () => {
@@ -23,9 +24,14 @@ class HornedBeasts extends React.Component {
   }
 
  
+ 
+ Full =()=>{
+   this.props.handelOpen();
+   this.props.getdata(this.props.name,this.props.imageUrl,this.props.description)
+ }
     
     
-   
+
    
 
   render() {
@@ -34,23 +40,23 @@ class HornedBeasts extends React.Component {
       <>
 
         <div className='cardsclass'>
-          <Col>
+          {/* <Col> */}
             <Card style={{ width: '18rem' }}>
               <Card.Img onClick={this.incremental} variant="top" src={this.props.imageUrl} />
               <Card.Body>
                 <Card.Title>{this.props.name}</Card.Title>
-                <Card.Text>
+                <Card.Text >
                   favorites💖 :{this.state.favorites}
                 
                 </Card.Text>
-                <Button onClick={this.props.Select} variant="primary"> Go somewhere</Button>
+                <Button onClick={this.Full} variant="primary"> Show Details </Button>
                 {this.props.description}
-              </Card.Body>
+              </Card.Body>nn   
             </Card>
-          </Col>
+          {/* </Col> */}
         </div>
 
-
+      
 
         
       </>
